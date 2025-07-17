@@ -58,12 +58,13 @@ paper {
 
     serverDependencies {
         register("bukkit-utils") {
-            load = PaperPluginDescription.RelativeLoadOrder.AFTER
+            load = PaperPluginDescription.RelativeLoadOrder.BEFORE
             required = true
         }
 
         register("LuckPerms") {
-            load = PaperPluginDescription.RelativeLoadOrder.AFTER
+            load = PaperPluginDescription.RelativeLoadOrder.BEFORE
+            required = false
         }
     }
 }
